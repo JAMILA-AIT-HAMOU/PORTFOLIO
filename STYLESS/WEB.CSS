@@ -25,8 +25,8 @@ body {
 .navbar a {
   font-size: 1.5rem;
   color: var(--text-color);
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
 
   transition: 0.3s eas;
 
@@ -54,19 +54,122 @@ body {
   color: var(--main-color);
   display: none;
 }
+span {
+ font-size: 20px;
+ font-weight: 1000;
+ text-decoration:underline var(--main-color);
+}
 /*section*/
 section {
-  padding-top: 3%;
+  padding-top: 1.8%;
   min-height: 100vh;
 }
 h2 {
-  padding-top: 25px;
+  padding-top: 60px;
   padding-bottom: 0;
   font-size: 2rem;
   text-align: center;
   margin: 5rem 0;
 }
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  text-align: left;
+  justify-content: center;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  margin-top: 2rem;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.portfolio p {
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.8;
+  max-width: 1000px;
 
+}
+.portfolio  i{
+  font-size: 60px;
+  padding: 0;
+  border: none;
+  border-radius: 12%;
+  box-shadow: 0 0 25px var(--main-color),
+  0 0 10px white;
+  background-color: var(m);
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: 0.4s ease-in-out;
+}
+.portfolio a i{
+  font-size: 20px;
+  margin-left: 20px;
+}
+.portfolio i:hover{
+  transform: scale(1.9);
+}
+
+.portfolio img {
+  width: 50%;
+  height: 50%;
+  border-radius: 8px;
+  box-shadow:0 0 25px var(--main-color), 0 0 10px white;
+  margin-right: 20px;
+  margin-top: 25px;
+}
+.calculator {
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  text-align: left;
+  justify-content: center;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  margin-top: 2rem;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.calculator p {
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.8;
+  max-width: 1000px;
+
+}
+.calculator i{
+  font-size: 60px;
+  padding: 0;
+  border: none;
+  border-radius: 12%;
+  box-shadow: 0 0 25px var(--main-color),
+  0 0 10px white;
+  background-color: var(m);
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: 0.4s ease-in-out;
+}
+.calculator a i{
+  font-size: 20px;
+  margin-left: 20px;
+}
+.calculator i:hover{
+  transform: scale(1.9);
+}
+
+.calculator img {
+  width: 50%;
+  height: 50%;
+  border-radius: 8px;
+  box-shadow: 0 0 25px var(--main-color),
+  0 0 10px white;
+  margin-right: 20px;
+  margin-top: 25px;
+}
 /*footer*/
 .footer {
   position: relative;
