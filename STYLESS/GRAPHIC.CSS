@@ -26,9 +26,9 @@ body {
   font-size: 1.5rem;
   color: var(--text-color);
   margin-left: 4rem;
- 
+
   transition: 0.3s eas;
- 
+
   opacity: 0;
   animation: slideBottom 1s ease forwards;
   animation-delay: 0.7s;
@@ -47,18 +47,12 @@ body {
 .navbar a:hover,
 .navbar a.active {
   color: var(--main-color);
-  
-}
-#menu-icon {
-  font-size: 3.6rem;
-  color: var(--main-color);
-  display: none;
 }
 /*section*/
 section {
-    padding-top: 3%;
-    min-height: 100vh;
-  }
+  padding-top: 3%;
+  min-height: 100vh;
+}
 h2 {
   padding-top: 25px;
   padding-bottom: 0;
@@ -70,7 +64,6 @@ h2 {
   display: flex;
   text-align: center;
   justify-content: space-around;
- 
 }
 .logos-img img {
   width: 15vw;
@@ -168,4 +161,96 @@ h2 {
   text-align: center;
   font-size: 16px;
   color: white;
+}
+/*responsive*/
+@media(max-width:1300px){
+  .header{
+    padding-left: 2rem;
+  }
+}
+@media(max-width:1200px){
+  .header{
+    padding-left: 0rem;
+  }
+  .navbar a {
+    margin-left: 2.5rem;
+  }
+  section {
+    min-height: auto;
+  }
+  
+  .logos-img img {
+    margin: 2rem 0;
+  }
+  .cards-img img,
+  .product-elements img {
+    width: 45%;
+    margin-bottom: 0.3rem;
+    margin-left: 0.1rem;
+  }
+  .product-elements video {
+    width: 42%;
+    margin-bottom: 0.3rem;
+    margin-left: 0.1rem;
+  }
+}
+@media(max-width:1000px){
+  .navbar a {
+    font-size: 1rem;
+    margin-left: 2.5rem;
+  }
+ 
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .books img {
+    width: 75%;
+  }
+  
+}
+@media(max-width:750px){
+  .header {
+    width: 105%;
+    padding: 0;
+  }
+  
+  .navbar a {
+    font-size: 0.8rem;
+    margin-left: 0.7rem;
+  }
+  .footer {
+    padding: 10px 0;
+  }
+  .footer .social {
+    padding-bottom: 5px;
+  }
+  .footer .social a {
+    font-size: 18px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+  .footer ul {
+    font-size: 8px;
+  }
+  .footer ul li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  .footer .copyright {
+    margin-top: 5px;
+    font-size: 8px;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    padding-left: 0.4rem;
+  }
+  .navbar a {
+    font-size: 0.5rem;
+    margin-left: 2rem;
+  }
 }
