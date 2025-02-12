@@ -50,8 +50,9 @@ body {
 .logo:hover {
   transform: scale(1.05);
   color: var(--main-color);
-  border-bottom: 3px solid var(--main-color);}
-.header img{
+  border-bottom: 3px solid var(--main-color);
+}
+.header img {
   border-radius: 50%;
   margin-bottom: 0rem;
   position: static;
@@ -63,10 +64,11 @@ body {
 
   opacity: 0;
   animation: slideLeft 1s ease forwards;
-  animation-delay: 1s;}
+  animation-delay: 1s;
+}
 
-.header img:hover{
-   transform: scale(1.05);
+.header img:hover {
+  transform: scale(1.05);
   box-shadow: 0 0 25px var(--main-color);
 }
 .logo span {
@@ -83,7 +85,6 @@ body {
     opacity: 1;
   }
 }
-
 
 .navbar a {
   font-size: 1.8rem;
@@ -392,6 +393,7 @@ span {
   font-weight: 300;
   line-height: 22px;
 }
+/*scrollbar*/
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -401,10 +403,6 @@ span {
 ::-webkit-scrollbar-track {
   background-color: var(--bg-color);
   width: 50px;
-}
-/*skills*/
-.skills{
-  
 }
 .instead-of-section {
   display: flex;
@@ -417,7 +415,7 @@ span {
   width: 600px;
   height: 500px;
   padding: 75px 90px;
-  margin-left: 120px;
+  margin-left: 1px;
 }
 .tech-pro-skills {
   text-align: center;
@@ -649,9 +647,6 @@ span {
   opacity: 0;
 }
 /*projects*/
-
-.main-text {
-}
 .projects-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(359px, auto));
@@ -734,7 +729,6 @@ span {
   font-size: 20px;
   font-weight: 400;
   text-align: center;
-  
 }
 .services-container {
   display: grid;
@@ -758,7 +752,7 @@ span {
   color: black;
   border: 5px solid var(--main-color);
   transform: scale(1.03);
-  box-shadow: 0 0 40px var(--main-color),  0 0 40px var(--main-color);
+  box-shadow: 0 0 40px var(--main-color), 0 0 40px var(--main-color);
 }
 .service-info {
   display: flex;
@@ -767,11 +761,9 @@ span {
   justify-content: left;
   align-items: left;
   padding: 5rem;
-  
-  
 }
-.service-info i{
-font-size: 8rem;
+.service-info i {
+  font-size: 8rem;
 }
 .service-info h4 {
   font-size: 4rem;
@@ -781,31 +773,28 @@ font-size: 8rem;
 .service-info p {
   font-size: 1.1rem;
   font-weight: 600;
- 
-  line-height: 1.7;
 
+  line-height: 1.7;
 }
 
-.services-list{
+.services-list {
   font-size: 1.4rem;
- 
-  line-height: 1.7;
 
+  line-height: 1.7;
 }
-.note{
+.note {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
-  
 }
-.note P{
+.note P {
   margin-top: 4rem;
   color: white;
   font-size: 20px;
   font-weight: 400;
   text-align: center;
 }
-.note i{
+.note i {
   color: aliceblue;
   margin-top: 24px;
   font-size: 20px;
@@ -818,10 +807,9 @@ font-size: 8rem;
   border-radius: 50%;
   border: #fff 1px solid;
   box-shadow: 0 0 50px var(--main-color);
-  }
-  
-/*contact me*/
+}
 
+/*contact me*/
 
 .contact form {
   display: flex;
@@ -909,4 +897,313 @@ font-size: 8rem;
   font-size: 16px;
   color: white;
 }
-/*this is how to make it enable for all devices*/
+/*responsive*/
+@media (max-width: 1420px) {
+  html {
+    font-size: 40%;
+  }
+  .skill-container {
+    padding: 20px 1px;
+  }
+  .projects-content {
+    padding-left: 120px;
+    padding-right: 170px;
+  }
+  .services {
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+  .services-container {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .contact form textarea {
+    height: 35rem;
+  }
+
+  .contact form .btn {
+    margin-top: 0.5rem;
+    width: 30rem;
+    font-size: 12px;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 32%;
+  }
+  section {
+    min-height: 25vh;
+  }
+  .home-content {
+    margin-bottom: 20px;
+    top: -5px;
+  }
+  .home-img img {
+    margin-top: 60px;
+  }
+  .sec-texts li {
+    width: 300px;
+    height: 100px;
+    font-size: 30px;
+    animation: slide 12s steps(100) infinite, colorful 6s infinite;
+  }
+  .sec-texts li span::before {
+    height: 0px;
+  }
+  .home-content p {
+    font-size: 2rem;
+  }
+
+  .skill-container {
+    width: 350px;
+    height: 130px;
+    padding: 20px 1px;
+    margin-left: 12px;
+  }
+  .tech-pro-skills {
+    margin-bottom: 25px;
+    font-size: small;
+  }
+  .projects {
+    margin-top: 300px;
+  }
+  .projects-content {
+    grid-template-columns: repeat(1, minmax(210px, 1fr));
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .service-box {
+    height: 350px;
+  }
+  .input-box input {
+    height: 10rem;
+  }
+  .contact form textarea {
+    height: 40rem;
+  }
+
+  .contact form .btn {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 12%;
+  }
+  .home {
+    flex-direction: column-reverse;
+    margin-top: 1rem;
+  }
+  .home-content h1 {
+    font-size: 12rem;
+    margin-top: 10rem;
+  }
+  .home-content {
+    margin-left: 0.5rem;
+    font-size: 1px;
+  }
+  .wrapper .sec-texts {
+    height: 100px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .sec-texts li {
+    width: 240px;
+    height: 90px;
+    font-size: 19px;
+    line-height: 20px;
+  }
+  .sec-texts li span::before {
+    left: 0;
+    width: 4000px;
+    height: 0px;
+  }
+  .wrapper .first-text {
+    font-size: 40px;
+    padding-top: 1px;
+  }
+  .home-img img {
+    margin-top: 40px;
+  }
+  .home-content p {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 2;
+    margin-bottom: 5rem;
+  }
+
+  .social-icons a {
+    width: 14rem;
+    height: 14rem;
+    font-size: 8rem;
+  }
+  .btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    font-size: 6rem;
+    margin-top: 5rem;
+  }
+  .btn-group {
+    gap: 4rem;
+  }
+
+  .heading {
+    font-size: 20rem;
+    text-align: center;
+    margin: 10rem 0;
+  }
+  .timeline-date {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .timeline-content {
+    padding: 22px 28px;
+  }
+  .timeline-content h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 900;
+  }
+  .timeline-content p {
+    font-size: 11px;
+    font-weight: 100;
+    line-height: 18px;
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  .instead-of-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+  }
+  .skill-container {
+    width: 350px;
+    height: 530px;
+    padding: 20px 1px;
+    margin-left: 12px;
+  }
+  .tech-pro-skills {
+    margin-bottom: 25px;
+    font-size: small;
+  }
+  .projects-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  }
+
+  .services h2 {
+    margin-bottom: 10rem;
+  }
+  .services h3 {
+    margin-bottom: 5rem;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8rem;
+  }
+  .service-box {
+    height: 350px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .service-info i {
+    font-size: 22rem;
+  }
+  .service-info h4 {
+    font-size: 10rem;
+  }
+  .service-info p {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .services-list {
+    font-size: 4rem;
+
+    line-height: 1.7;
+  }
+  .note P {
+    margin-top: 10rem;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: left;
+  }
+  .note i {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .contact form {
+    flex-direction: column;
+    gap: 8rem;
+  }
+  .contact form .input-box {
+    gap: 3rem;
+  }
+  .contact form .input-box input,
+  .contact form textarea {
+    width: 100%;
+    padding: 6rem;
+    font-size: 4rem;
+    border-radius: 5rem;
+  }
+  .input-box input {
+    height: 20rem;
+  }
+  .contact form textarea {
+    height: 130rem;
+  }
+
+  .contact form .btn {
+    margin-top: 5rem;
+    width: 95rem;
+  }
+
+  .footer {
+    padding: 10px 0;
+  }
+  .footer .social {
+    padding-bottom: 5px;
+  }
+  .footer .social a {
+    font-size: 18px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+  .footer ul {
+    font-size: 8px;
+  }
+  .footer ul li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  .footer .copyright {
+    margin-top: 5px;
+    font-size: 6px;
+  }
+}
+@media (max-width: 325px) {
+  .header {
+    width: 340px;
+  }
+  .home-content {
+    width: 240px;
+  }
+  .skill-container {
+    width: 220px;
+  }
+}
