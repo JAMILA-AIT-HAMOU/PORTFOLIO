@@ -251,6 +251,13 @@ h2 {
   }
   .navbar a {
     font-size: 0.5rem;
-    margin-left: 2rem;
+    margin-left: 1.8rem;
+  }
+}
+
+@media (max-width: 325px) {
+  
+  .navbar a {
+    margin-left: 0.4rem;
   }
 }
