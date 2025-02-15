@@ -245,6 +245,18 @@ h2 {
     font-size: 8px;
   }
 }
+
+/*scrollbar*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+  width: 50px;
+}
 @media (max-width: 500px) {
   .header {
     padding-left: 0.4rem;

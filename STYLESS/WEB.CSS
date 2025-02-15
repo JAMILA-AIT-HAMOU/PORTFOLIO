@@ -55,9 +55,9 @@ body {
   display: none;
 }
 span {
- font-size: 20px;
- font-weight: 1000;
- text-decoration:underline var(--main-color);
+  font-size: 20px;
+  font-weight: 1000;
+  text-decoration: underline var(--main-color);
 }
 /*section*/
 section {
@@ -89,26 +89,24 @@ h2 {
   font-weight: 500;
   line-height: 1.8;
   max-width: 1000px;
-
 }
-.portfolio  i{
+.portfolio i {
   font-size: 60px;
   padding: 0;
   border: none;
   border-radius: 12%;
-  box-shadow: 0 0 25px var(--main-color),
-  0 0 10px white;
+  box-shadow: 0 0 25px var(--main-color), 0 0 10px white;
   background-color: var(m);
   margin-left: 100px;
   margin-top: 30px;
   margin-bottom: 30px;
   transition: 0.4s ease-in-out;
 }
-.portfolio a i{
+.portfolio a i {
   font-size: 20px;
   margin-left: 20px;
 }
-.portfolio i:hover{
+.portfolio i:hover {
   transform: scale(1.9);
 }
 
@@ -116,7 +114,7 @@ h2 {
   width: 50%;
   height: 50%;
   border-radius: 8px;
-  box-shadow:0 0 25px var(--main-color), 0 0 10px white;
+  box-shadow: 0 0 25px var(--main-color), 0 0 10px white;
   margin-right: 20px;
   margin-top: 25px;
 }
@@ -138,26 +136,24 @@ h2 {
   font-weight: 500;
   line-height: 1.8;
   max-width: 1000px;
-
 }
-.calculator i{
+.calculator i {
   font-size: 60px;
   padding: 0;
   border: none;
   border-radius: 12%;
-  box-shadow: 0 0 25px var(--main-color),
-  0 0 10px white;
+  box-shadow: 0 0 25px var(--main-color), 0 0 10px white;
   background-color: var(m);
   margin-left: 100px;
   margin-top: 30px;
   margin-bottom: 30px;
   transition: 0.4s ease-in-out;
 }
-.calculator a i{
+.calculator a i {
   font-size: 20px;
   margin-left: 20px;
 }
-.calculator i:hover{
+.calculator i:hover {
   transform: scale(1.9);
 }
 
@@ -165,8 +161,7 @@ h2 {
   width: 50%;
   height: 50%;
   border-radius: 8px;
-  box-shadow: 0 0 25px var(--main-color),
-  0 0 10px white;
+  box-shadow: 0 0 25px var(--main-color), 0 0 10px white;
   margin-right: 20px;
   margin-top: 25px;
 }
@@ -207,4 +202,194 @@ h2 {
   text-align: center;
   font-size: 16px;
   color: white;
+}
+/*scrollbar*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+  width: 50px;
+}
+/*responsive*/
+@media (max-width: 1300px) {
+  .header {
+  }
+  .navbar a {
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+  }
+}
+@media (max-width: 1100px) {
+  .header {
+  }
+  .navbar a {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .portfolio p {
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 370px;
+    margin-right: 5rem;
+  }
+  .portfolio i {
+    margin-left: 50px;
+  }
+  .calculator p {
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 370px;
+    margin-right: 5rem;
+  }
+  .calculator i {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .navbar a {
+    font-size: 1.1rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .portfolio p {
+    max-width: 400px;
+    margin-right: 1rem;
+  }
+  .portfolio i {
+    margin-left: 30px;
+    font-size: 45px;
+  }
+  .portfolio img {
+    width: 60%;
+    height: 60%;
+    margin-right: 5px;
+    margin-left: 0rem;
+  }
+  .calculator p {
+    max-width: 400px;
+    margin-right: 1rem;
+  }
+  .calculator i {
+    margin-left: 30px;
+    font-size: 45px;
+  }
+  .calculator img {
+    width: 60%;
+    height: 60%;
+    margin-right: 5px;
+    margin-left: 0rem;
+  }}
+  
+@media (max-width: 500px) {
+  .navbar a {
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  h2 {
+    padding-top: 8px;
+    margin: 3rem 0;
+  }
+  .portfolio {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .portfolio img {
+    width: 100%;
+    height: 100%;
+    margin-right: 1px;
+  }
+  .portfolio p {
+    max-width: 100%;
+    margin-right: 0.1rem;
+    font-size: 0.9rem;
+  }
+  .calculator {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .calculator img {
+    width: 100%;
+    height: 100%;
+    margin-right: 1px;
+  }
+  .calculator p {
+    max-width: 100%;
+    margin-right: 0.1rem;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 325px) {
+  .header {
+    padding: 1rem 0.8rem;
+  }
+
+  .navbar a {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  h2 {
+    padding-top: 0.1rem;
+    margin-bottom: 0;
+    margin-top: 3rem;
+    font-size: 1.6rem;;
+  }
+  
+  .portfolio img {
+    width: 140%;
+    height: 140%;
+  }
+  .portfolio p {
+    width: 15.5rem;
+    margin-right: 0rem;
+    font-size: 0.8rem;
+  }
+  .portfolio i {
+    margin-left: 20px;
+    font-size: 35px;
+  }
+  .calculator img {
+    width: 140%;
+    height: 140%;
+  }
+  .calculator p {
+    width: 15.5rem;
+    margin-right: 0rem;
+    font-size: 0.8rem;
+  }
+  .calculator i {
+    margin-left: 20px;
+    font-size: 35px;
+  }
+  .footer {
+    padding: 10px 0;
+  }
+  .footer .social {
+    padding-bottom: 5px;
+  }
+  .footer .social a {
+    font-size: 20px;
+    width: 27px;
+    height: 27px;
+    line-height: 30px;
+  }
+  .footer ul {
+    font-size: 8px;
+  }
+  .footer ul li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  .footer .copyright {
+    margin-top: 5px;
+    font-size: 10px;
+  }
 }
