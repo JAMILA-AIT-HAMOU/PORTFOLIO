@@ -14,9 +14,19 @@
   --text-color: white;
   --main-color: #00ffee;
 }
+.hidden{
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6 ease-out, transform 0.6 ease-out;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 html {
   font-size: 60%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   background: var(--bg-color);
