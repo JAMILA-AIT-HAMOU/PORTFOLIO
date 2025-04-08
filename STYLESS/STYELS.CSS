@@ -14,7 +14,7 @@
   --text-color: white;
   --main-color: #00ffee;
 }
-.hidden{
+.hidden {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6 ease-out, transform 0.6 ease-out;
@@ -35,7 +35,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .header {
   position: fixed;
   top: 0;
@@ -829,6 +828,42 @@ span {
   margin: 5rem auto;
   text-align: center;
 }
+.error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+#success-message {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 12px;
+  transition: opacity 0.5s ease-out;
+} /* Spinner styles */
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #ccc;
+  border-top: 4px solid var(--main-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 10px; /* Space between the button and spinner */
+  display: inline-block; /* Inline with the submit button */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .contact form .input-box {
   display: flex;
   justify-content: center;
@@ -849,6 +884,13 @@ span {
 .contact form .btn {
   margin-top: 2rem;
 }
+
+input[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+
 /*footer*/
 .footer {
   position: relative;
