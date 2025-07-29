@@ -419,7 +419,84 @@ span {
   padding-bottom: 50px;
   margin-bottom: 30px;
 }
+/*Certifications*/
 
+#certifications {
+  padding: 100px 15px;
+}
+#certifications h2 {
+  margin-bottom: 5rem;
+}
+#multi-certification{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+}
+
+.certification-container{
+  position: absolute;
+  width:30%;
+  height: 400px;
+  background-color:gray;
+  border-radius: 50px;
+  box-shadow: 0 0 25px var(--main-color),0 0 10px var(--main-color);
+  border-inline-end-width: 3cap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.8) translateX(300px);
+  z-index: 0;
+  transition: all 1s ease-in-out;
+  margin:0 auto;
+  border: 3px solid white;
+}
+.certification-container.center {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+  z-index: 3;
+}
+.certification-container.left {
+  opacity: 0.5;
+  transform: scale(0.8) translateX(-300px);
+  z-index: 2;
+}
+.certification-container.right {
+  opacity: 0.3;
+  transform: scale(0.8) translateX(300px);
+  z-index: 1;
+}
+
+.certification-container img{
+  width:85%;
+  margin:16px auto;
+  border-radius: 10px;
+}
+button {
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  border-radius: 4rem;
+  font-size: 1.5rem;
+  color: black;
+  border: 2px solid transparent;
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px var(--main-color);
+}
+/*Skills*/
 .skill-container {
   width: 600px;
   height: 500px;

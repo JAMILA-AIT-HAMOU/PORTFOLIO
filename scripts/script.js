@@ -300,3 +300,73 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+// Adding thecertification section
+const certificationDetaills=[
+    {
+        imgSrc:"IMG/certification/Responsive..cert.png",
+        altText:"Responsive Web Design Certification",
+        link:"https://www.freecodecamp.org/certification/JAMILAAITHAMOU/responsive-web-design",
+        buttonText:"View Certification",
+    },
+    {
+        imgSrc:"IMG/certification/JavaScript...cert.png",
+        altText:"JavaScript Certification",
+        link:"https://www.freecodecamp.org/certification/JAMILAAITHAMOU/javascript-algorithms-and-data-structures-v8",
+        buttonText:"View Certification",
+    },
+    {
+        imgSrc:"IMG/certification/comming soon.png",
+        altText:"Comming Soon",
+        link:"",
+        buttonText:"Comming Soon"
+    }
+]
+
+    //Inject  certification HTML
+    let certificationsHTML=`
+    <div id="certification">
+        <div id="multi-certification">
+        
+    `;
+
+    certificationDetaills.forEach(cert =>{
+        certificationsHTML+=`
+            <div class="certification-container">
+                <img src="${cert.imgSrc}" alt="${cert.altText}">
+                <button><a href="${cert.link}"></a>${cert.buttonText}</button>
+            </div>
+          `;
+    });
+
+    certificationsHTML+=`
+        </div>
+    </div>
+    `;
+
+    document.querySelector("#certifications").innerHTML+= certificationsHTML
+
+    //certification animation
+    const certifications=document.querySelectorAll(".certification-container");
+
+    let currentIndex=0;
+    const updateCertification=()=>{
+        const total=certifications.length;
+        certifications.forEach((cert, index)=>{
+            cert.classList.remove("center", "left", "right");
+
+        });
+
+        const centerPosition=certifications[currentIndex];
+        const leftPosition=certifications[(currentIndex - 1 + total) % total];
+        const rightPosition=certifications[(currentIndex + 1) % total]
+
+        centerPosition.classList.add("center"); 
+        leftPosition.classList.add("left"); 
+        rightPosition.classList.add("right");  
+        
+        currentIndex=(currentIndex +1) %total;
+    }
+
+    updateCertification();
+    setInterval(updateCertification, 3150)
