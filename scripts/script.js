@@ -301,7 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Adding thecertification section
+// Adding the certification section
 const certificationDetaills=[
     {
         imgSrc:"IMG/certification/Responsive..cert.png",
@@ -334,7 +334,7 @@ const certificationDetaills=[
         certificationsHTML+=`
             <div class="certification-container">
                 <img src="${cert.imgSrc}" alt="${cert.altText}">
-                <button><a href="${cert.link}"></a>${cert.buttonText}</button>
+                <button><a href="${cert.link}" target="_blank">${cert.buttonText}</a></button>
             </div>
           `;
     });
