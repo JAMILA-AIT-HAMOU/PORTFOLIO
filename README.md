@@ -1,25 +1,16 @@
-# Portfolio Website
+# React + Vite
 
-![Work in Progress](https://img.shields.io/badge/Status-Work_in_Progress-yellow)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-This is my personal portfolio website showcasing my 3D modeling, web development, and graphic design projects. 🚧 Work in progress!
+Currently, two official plugins are available:
 
-## 🚧 Work in Progress
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-This portfolio website is built using **HTML** for structure and styled beautifully with **CSS**.  
-It includes:
-- A collection of my **3D modeling projects**.
-- A showcase of my **graphic design work**.
-- Navigation and layout optimized for a clean user experience.
+## React Compiler
 
-Planned improvements include:
-- Enhancing responsiveness for mobile devices.
-- Improving SEO for better visibility.
-- **Adding interactivity using JavaScript** for a more dynamic user experience.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Stay tuned for updates!
+## Expanding the ESLint configuration
 
-## 🌐 Links
-
-- [Portfolio Website](https://jamila-ait-hamou.github.io/PORTFOLIO/)
-- [GitHub Repository](https://github.com/JAMILA-AIT-HAMOU/PORTFOLIO)
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
