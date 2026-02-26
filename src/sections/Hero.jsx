@@ -1,12 +1,23 @@
+import profile from "../assets/profile.jpg"
+
 function Hero(){
   return (
     <section className="hero"> 
-      <h1>Jamila Ait Hamou</h1>
-      <h2>Front-End Developer</h2>
-      <p>I build responsive web applications using React and JavaScript.</p>
-      <button onClick={()=>{
-        document.getElementById("projects").scrollIntoView({behavior:"smooth"})
-      }}>View Projects</button>
+      <div className="hero-conent">
+        
+        <div className="hero-image">
+          <img src={profile} alt="Jamila Ait Hamou" />
+        </div>
+        
+        <div className="hero-text">
+          <h1>Jamila Ait Hamou</h1>
+          <h3>Front-End Developer</h3>
+          <p>Focused on building responsive and user-friendly web applications with React and JavaScript.</p>
+          <button onClick={()=>{
+            document.getElementById("projects").scrollIntoView({behavior:"smooth"})
+          }}>View Projects</button>
+        </div>
+      </div>
     </section>
   )
 }

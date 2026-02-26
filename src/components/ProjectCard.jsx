@@ -3,7 +3,7 @@ function ProjectCard({title,descreption, github, demo}){
     <div  className="card">
       <h3>{title}</h3>
       <p>{descreption}</p>
-      <div>
+      <div className="link">
         <a href={github} target="_blank">GitHub</a>
         <a href={demo} target="_blank">Live Demo</a>
       </div>

@@ -5,6 +5,8 @@ function Projects(){
     <section id="projects">
     
       <h2>Projects</h2>
+      <div>
+        
       <ProjectCard
             title="Memory Card Game"
             descreption="React memory game with timer, sound effects, and win/lose logic."
@@ -22,6 +24,7 @@ function Projects(){
             descreption="Interactive form built with JavaScript." 
             github="https://github.com/JAMILA-AIT-HAMOU/Event-RSVP-Form" 
             demo="https://jamila-ait-hamou.github.io/Event-RSVP-Form/"/>
+      </div>
     </section>
   )
 }
