@@ -5,6 +5,7 @@ import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
+import Certifications from "./components/Certifications";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <Navbar />
       <div className="container">
         <Hero />
-        <Projects />
         <Skills />
+        <Projects />
+        <Certifications />
         <Contact />
         <Footer />
       </div>
