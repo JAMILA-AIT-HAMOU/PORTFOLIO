@@ -34,6 +34,12 @@ h2 {
     0 8px 20px white,
     0 8px 20px var(--main-color);
 }
+.card img{
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 3px solid white;
+}
 .card .link {
   display: flex;
   flex-direction: column;
