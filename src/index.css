@@ -148,7 +148,8 @@ button, .download-btn{
 }
 .download-btn{
   color: var(--second-bg-color);
-  padding: 0;
+  font-size: 13.5px;
+
 }
 
 

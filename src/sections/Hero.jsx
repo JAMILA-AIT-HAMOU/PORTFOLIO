@@ -16,12 +16,11 @@ function Hero(){
           <button onClick={()=>{
             document.getElementById("projects").scrollIntoView({behavior:"smooth"})
           }}>View Projects</button>
-          <button>
             
-          <a href="/Jamila_Ait_Hamou_Frontend_Developer.pdf"
+          <a href="./Jamila_Ait_Hamou_Frontend_Developer.pdf"
           download
            className="download-btn">Download CV</a>
-          </button>
+         
         </div>
       </div>
     </section>
