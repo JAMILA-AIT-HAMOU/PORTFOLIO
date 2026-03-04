@@ -1,4 +1,6 @@
-![Jamila Ait Hamou](https://img.shields.io/badge/Jamila_Ait_Hamou-Portfolio-yellow)
+# Portfolio Website
+
+![Jamila Ait Hamou](https://img.shields.io/badge/Jamila_Ait_Hamou-Portfolio-#00ffee)
 
 
 A React-based portfolio showcasing my front-end development projects, technical expertise, and certifications.
