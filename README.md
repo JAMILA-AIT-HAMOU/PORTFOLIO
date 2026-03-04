@@ -1,6 +1,6 @@
 # Portfolio Website
 
-![Portfolio](https://img.shields.io/badge/Jamila_Ait_Hamou-Portfolio-cyan)
+![Portfolio](https://img.shields.io/badge/Portfolio-Jamila_Ait_Hamou-cyan)
 
 
 A React-based portfolio showcasing my front-end development projects, technical expertise, and certifications.
