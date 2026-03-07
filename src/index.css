@@ -40,12 +40,30 @@ h2 {
   margin-bottom: 15px;
   border: 3px solid white;
 }
-.card .link {
+.card-items{
+  display: flex;
+  gap: 3rem;
+}
+.card .card-items .link {
   display: flex;
   flex-direction: column;
 }
-.card .link a {
+.card .card-items .link a {
   margin-top: 3px;
+}
+.card .card-items .link img{
+  width: 100%;
+  height: 100px;
+}
+.icons{
+  display: flex;
+
+}
+.card .card-items .icons .icon{
+  width:40px;
+  height: 50px;
+  border: none;
+  margin: 0;
 }
 .container {
   max-width: 1100px;
