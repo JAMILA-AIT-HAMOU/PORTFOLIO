@@ -312,6 +312,31 @@ a:hover {
   box-shadow: 0 2px 25px white;
 }
 
+footer .social-icons {
+  text-align: center;
+  padding-bottom: 18px;
+  color: var(--main-color);
+}
+footer .social-icons a {
+  font-size: 25px;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  width: 40px;
+  height: 40px;
+  line-height: 46px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.3s ease-in-out;
+}
+footer .social-icons a:hover {
+  transform: scale(1.2) translateY(-10px);
+  background-color: var(--main-color);
+  color: black;
+  box-shadow: 0 0 25px var(--main-color);
+}
+
 
 
 @media (max-width: 768px) {
