@@ -357,8 +357,11 @@ footer .social-icons a:hover {
   }
 }
 @media (max-width: 450px) {
+  nav {
+  padding: 3px 8px;}
   nav ul {
-    gap: 12px;
+    gap: 10px;
+    font-size: 12px;
   }
   .hero-text {
     margin-top: 14rem;
