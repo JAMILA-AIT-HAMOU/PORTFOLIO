@@ -3,7 +3,7 @@ import profile from "../assets/profile.jpg"
 function Hero(){
   return (
     <section className="hero"> 
-      <div className="hero-conent">
+      <div className="hero-content">
         
         <div className="hero-image">
           <img src={profile} alt="Jamila Ait Hamou" />
