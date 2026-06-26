@@ -69,6 +69,9 @@ h2 {
   max-width: 1100px;
   margin: 0 auto;
 }
+.logo-container{
+  position: relative;
+}
 .logo {
   width: 50px;
   height: 50px;
@@ -86,6 +89,146 @@ h2 {
     0 0 8px white,
     0 0 10px var(--main-color);
 }
+.connector{
+  position: absolute;
+  top: 58px;
+  left: 28px;
+
+  width: 8px;
+  height: 55px;
+  background: linear-gradient(
+    to right,
+    #bffcff,
+    var(--main-color),
+    #bffcff
+  );
+  border-radius: 20px;
+  box-shadow: 0 0 8px var(--main-color), 
+  0 0 15px rgba(0, 255, 238, 0.4);
+  z-index: 999;
+
+}
+.connector::before{
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--main-color);
+  box-shadow: 0 0 8px var(--main-color);
+}
+.hiring-card{
+  position: absolute;
+  top:76px;
+  left: 0;
+  width: 220px;
+  padding: 1rem;
+  background: rgba(20, 20, 20, 0.95);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 10px 10px 18px 18px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.15),
+  0 0 10px var(--main-color);
+  z-index: 1000;
+  
+  animation: floatCard 5s ease-in-out infinite;
+}
+.avatar::before{
+  content: "";
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 2px dashed var(--main-color);
+  animation: spin 12s linear infinite;
+}
+.avatar{
+  position: relative;
+    width:50px;
+    height:50px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    border:1px solid var(--main-color);
+
+    background:#111;
+
+    color:var(--main-color);
+
+    font-size:2rem;
+    box-shadow: 0 0 12px var(--main-color);
+}
+.hiring-card span{
+  color: var(--main-color);
+  font-weight: 700;
+}
+.hiring-card p{
+  font-size:1rem;
+  color: white;
+  margin-bottom: 1.1rem;
+}
+.feature{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+.check-icon{
+  color: var(--main-color);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+
+}
+.hiring-btn{
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background:var(--main-color);
+  color: var(--second-bg-color);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-top: 1.1rem;
+}
+.hiring-btn:hover{
+  transform: translateX(2px);
+   opacity: 0.85;
+  transform: scale(1.1);
+  box-shadow: 0 2px 25px white;
+  text-decoration: none;
+}
+@keyframes spin{
+  from{
+    transform:rotate(0deg)
+  }
+  to{
+    transform:rotate(360deg)
+  }
+}
+@keyframes floatCard{
+  0%{
+    transform: translateY(0);
+  }
+   50%{
+    transform: translateY(25px);
+  }
+   100%{
+    transform: translateY(0);
+  }
+}
+
+
 nav {
   background: var(--second-bg-color);
   padding: 3px 40px;
