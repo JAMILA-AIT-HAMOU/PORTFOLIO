@@ -275,6 +275,7 @@ nav li:hover {
 .hero h1 {
   font-size: 42px;
   margin-bottom: 10px;
+  margin-top: 4rem;
 }
 .hero h3 {
   color: #555;
@@ -483,6 +484,10 @@ footer .social-icons a:hover {
     grid-template-columns: 1fr;
     text-align: center;
   }
+  
+  .hero-text {
+    margin-top: 14rem;
+  }
   .hero-image {
     margin-top: 30px;
   }
@@ -492,9 +497,48 @@ footer .social-icons a:hover {
   }
 
   .hero p {
-    max-width: 400px;
+    max-width: 100%;
   }
 }
+@media (max-width: 700px){
+  
+  
+  .hiring-card{
+  width: 93px;
+  padding: 1rem 0.5rem;
+  }
+  
+.avatar::before{
+  width: 32px;
+  height: 32px;
+}
+.avatar{
+    width:20px;
+    height:20px;
+    font-size:1rem;
+}
+.hiring-card p{
+  font-size:0.5rem;
+  margin-bottom: 0.8rem;
+}
+.feature{
+  gap: 5px;
+  margin: 4px 0;
+  font-size: 0.5rem;
+}
+.check-icon{
+  font-size: 0.5rem;
+
+}
+.hiring-btn{
+  padding: 0.3rem 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+}
+  
+
 @media (max-width: 450px) {
   nav {
   padding: 3px 8px;}
@@ -502,7 +546,46 @@ footer .social-icons a:hover {
     gap: 10px;
     font-size: 12px;
   }
-  .hero-text {
-    margin-top: 14rem;
+  
+  .hiring-card{
+  width: 63px;
+  
+  padding: 0.5rem;
+  
   }
+  
+.avatar::before{
+  width: 12px;
+  height: 12px;
+}
+.avatar{
+    width:10px;
+    height:10px;
+    font-size:0.5rem;
+    
+    margin:0 auto 10px;
+}
+.hiring-card h4{
+  font-size: 0.3rem;
+  margin: 0;
+}
+.hiring-card p{
+  font-size:0.3rem;
+  margin-bottom: 0.2rem;
+}
+.feature{
+  gap: 0.1rem;
+  margin-top: 0.1rem;
+  font-size: 0.3rem;
+}
+.check-icon{
+  font-size: 0.3rem;
+
+}
+.hiring-btn{
+  padding: 0.15rem 0.5rem;
+  margin: 0;
+  font-size: 0.3rem;
+}
+
 }

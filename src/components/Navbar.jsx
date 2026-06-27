@@ -26,7 +26,7 @@ function Navbar() {
             React Applications
           </div>
           <a 
-            href="https://www.fiverr.com/users/aithamoujamila/seller_dashboardP"
+            href="https://www.fiverr.com/s/yvKkXoV"
             target="_blank"
             rel="noopener noreferrer"
             className="hiring-btn"
