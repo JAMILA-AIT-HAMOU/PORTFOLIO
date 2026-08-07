@@ -1,6 +1,6 @@
 import certification1 from "../assets/certification/Responsive..cert.png"
 import certification2 from "../assets/certification/JavaScript...cert.png"
-import certification3 from "../assets/certification/comming soon.png"
+import certification3 from "../assets/certification/Frontend...cert.png"
 
 function Certifications() {
   return (
@@ -38,7 +38,7 @@ function Certifications() {
           <p>freeCodeCamp — 2026</p>
           <img src={certification3} alt="Front-End Development Libraries certification" />
           <a 
-            href="" 
+            href="https://www.freecodecamp.org/certification/jamilaaithamou/front-end-development-libraries-v9" 
             target="_blank" 
             rel="noopener noreferrer"
           >
