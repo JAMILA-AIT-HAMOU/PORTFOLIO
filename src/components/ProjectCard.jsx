@@ -1,6 +1,6 @@
 function ProjectCard({
   title,
-  descreption,
+  description,
   github,
   demo,
   imgSrc,
@@ -9,28 +9,51 @@ function ProjectCard({
   icon3,
   icon4,
 }) {
+
+  const technologies=[
+    {src:icon1, name:"HTML"},
+    {src:icon2, name:"CSS"},
+    {src:icon3, name:"JavaScript"},
+    {src:icon4, name:"React"},
+  ].filter((tech) => tech.src)
   return (
-    <div className="card">
-      <img src={imgSrc} alt={title} />
-      <h3>{title}</h3>
-      <p>{descreption}</p>
-      <div className="card-items">
-        <div className="link">
-          <a href={github} target="_blank">
-            GitHub
-          </a>
-          <a href={demo} target="_blank">
-            Live Demo
-          </a>
+    <article className="card">
+      <div className="card-img">
+        <img src={imgSrc} alt={`${title} project preview`} />
+      </div>
+
+      <div className="card-content">
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <div className="icons" aria-label="Technologies used">
+          {technologies.map((tech)=>(
+            <img 
+              key={tech.name}
+              src={tech.src}
+              alt={tech.name}
+              title={tech.name}
+              className="icon"
+            />
+
+          ))}
         </div>
-        <div className="icons">
-          {icon1 && <img src={icon1} alt="HTML" className="icon" />}
-          {icon2 && <img src={icon2} alt="CSS" className="icon" />}
-          {icon3 && <img src={icon3} alt="JavaScript" className="icon" />}
-          {icon4 && <img src={icon4} alt="React" className="icon" />}
+
+        <div className="card-links">
+          <a
+            href={demo}
+            target="_blank"
+            rel="noopener noreferrer"
+          >Live Demo ↗
+          </a>
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub ↗
+          </a>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
 export default ProjectCard;
