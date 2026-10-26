@@ -106,6 +106,7 @@ h2 {
   box-shadow: 0 0 8px var(--main-color), 
   0 0 15px rgba(0, 255, 238, 0.4);
   z-index: 999;
+  transition: opacity 0.3s ease, visibilityu 0.3s ease;
 
 }
 .connector::before{
@@ -121,6 +122,11 @@ h2 {
   background: white;
   border: 2px solid var(--main-color);
   box-shadow: 0 0 8px var(--main-color);
+}
+.connector.connector-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .hiring-card{
   position: absolute;
@@ -138,6 +144,14 @@ h2 {
   z-index: 1000;
   
   animation: floatCard 5s ease-in-out infinite;
+  transition: 
+  opacity 0.3s ease, transform 0.3s ease, visibility 03s ease;
+}
+.hiring-card.hiring-card-hidden{
+  opacity: 0;
+  transform: translateY(-15px);
+  visibility: hidden;
+  pointer-events: none;
 }
 .hiring-card h4{
   margin-bottom: 0;
@@ -672,6 +686,13 @@ footer .social-icons a:hover {
   font-size: 0.3rem;
 }
 
+}
+
+@media(prefers-reduced-motion: reduce){
+  .hiring-card,
+  .connector{
+    transition: none;
+  }
 }
 
 

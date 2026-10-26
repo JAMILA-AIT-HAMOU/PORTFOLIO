@@ -1,17 +1,52 @@
+import {useEffect, useState} from "react"
 import logo from "../assets/logo.jpg"
-import { FaHandSparkles } from "react-icons/fa";
-import { FaCheckCircle } from "react-icons/fa";
+import { FaHandSparkles, FaCheckCircle } from "react-icons/fa";
+
 
 function Navbar() {
+
+  const [isScrolled, setIsScrolled]=useState(false)
+  const [isCardOpen, setIsCardOpen]=useState(false)
+//handleScroll
+  useEffect (()=>{
+    const handleScroll=()=>{
+      const scrolled=window.scrollY>120;
+      setIsScrolled(scrolled)
+
+      if (!scrolled){
+        setIsCardOpen(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll,{
+      passive: true,
+    })
+    handleScroll();
+    return ()=>{
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
+//handleCardOpen
+
+  const showCard=!isScrolled || isCardOpen;
+  const handleLogoClick= (event)=>{
+    if (isScrolled){
+      event.preventDefault();
+      setIsCardOpen((prev)=>!prev)
+    }
+  }
+
   return (
     <nav>
       <div className="logo-container">
         
-        <a href="#">
+        <a href="#" onClick={handleLogoClick}>
           <img src={logo} alt="Jamila's logo" className="logo"/>
         </a>
-        <div className="connector"></div>
-        <div className="hiring-card">
+        <div className={`connector ${!showCard ? "connector-hidden" : ""}`}></div>
+        <div className={`hiring-card ${!showCard ? "hiring-card-hidden":""}`}
+        aria-hidden={!showCard}>
           <div className="avatar">
             <FaHandSparkles />
           </div>
@@ -30,6 +65,7 @@ function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             className="hiring-btn"
+            tabIndex={showCard ? 0 : -1}
           >
             Hire Me
           </a>
