@@ -378,9 +378,9 @@ h2 {
   min-width: 0;
   padding: 16px;
   margin: 0;
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.4s ease, border-color 0.2s ease;
 }
-#project .card-image{
+#projects .card-image{
   overflow: hidden;
   border-radius: 8px;
   margin-bottom: 16px;
@@ -393,7 +393,7 @@ h2 {
 
 }
 #projects .card-img:hover{
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 #projects .card-content{

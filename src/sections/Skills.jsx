@@ -10,6 +10,7 @@ function Skills(){
         <div>Git & GitHub</div>
         <div>Responsive Design</div>
         <div>APIs</div>
+         <div>TypeScript</div>
       </div>
 
     </section>
