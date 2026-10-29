@@ -3,8 +3,8 @@
 
 import ProjectsCategoreyCard from "../components/ProjectCategoryCard";
 
-import dashboardScreenShot from "../assets/projectsScreen/React Analytics Dashboard.png"
-import dentalScreenshot from "../assets/projectsScreen/Dental-website.png"
+import buildFromScratchImg from "../assets/projectsScreen/buikdFromScratch.png"
+import redesignsProjects from  "../assets/projectsScreen/buikdFromScratch.png"
 
 function Projects(){
       return(
@@ -14,7 +14,7 @@ function Projects(){
                               <ProjectsCategoreyCard
                                     title="Build From Scratch"
                                     description=""
-                                    image={dashboardScreenShot}
+                                    image={buildFromScratchImg}
                                     link="?page=build"
                                     buttonText="View Projects"
                               />
@@ -22,7 +22,7 @@ function Projects(){
                               <ProjectsCategoreyCard
                                     title="Redesigns Websites"
                                     description=""
-                                    image={dentalScreenshot}
+                                    image={redesignsProjects}
                                     link="?page=redesigns"
                                     buttonText="Explore Redesigns"
                               />

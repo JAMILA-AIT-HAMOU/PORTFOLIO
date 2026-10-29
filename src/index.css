@@ -300,8 +300,6 @@ nav li:hover {
   margin-top: 5rem;
   margin-bottom: -8rem;
 }
-.hero-content {
-}
 .hero-text {
   position: relative;
   bottom: 180px;
@@ -363,6 +361,9 @@ h2 {
   font-size: 30px;
   margin: 4rem 0;
 }
+
+/*projects*/
+
 #projects {
   margin-top: 10px;
 }
@@ -371,6 +372,80 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   align-items: stretch;
+}
+#projects.project-categories{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+#projects .category-card{
+  background: var(--second-bg-color);
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  padding-left: 1rem;
+  padding-top: 1.5rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  min-width: 0;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#projects .category-card:hover{
+  transform: translateY(-6px);
+  box-shadow:
+    0 8px 20px white,
+    0 8px 20px var(--main-color);
+}
+#projects .category-card-img{
+
+}
+#projects .category-card-img img{
+  display: block;
+  width: 95%;
+  height: 100%;
+  border:1px solid var(--main-color);
+  border-radius: 8px;
+  box-shadow:
+    0 2px 8px grey,
+    0 4px 8px var(--main-color);
+  margin: 0;
+  transition: transform 0.4s ease;
+}
+#projects .category-card:hover, .category-card-image img{
+  transform: scale(1.05);
+}
+#projects .category-card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  padding: 24px;
+}
+#projects .category-card-content p{
+  color: #c4c4c4;
+  line-height: 1.7;
+  margin: 0 0 24px;
+}
+#projects .category-card-link{
+  display: inline-block;
+  margin-top: auto;
+  padding: 11px 18px;
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  font-weight: 700;
+  transition: background 0.2s ease, color 0.2s ease;
+
+}
+#projects .category-card-link:hover{
+  background: transparent;
+  color: var(--main-color);
+  text-decoration: none;
 }
 #projects .card{
   display: flex;
