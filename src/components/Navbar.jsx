@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react"
+import {useEffect, useState, useRef} from "react"
 import logo from "../assets/logo.jpg"
 import { FaHandSparkles, FaCheckCircle } from "react-icons/fa";
 
@@ -6,34 +6,59 @@ import { FaHandSparkles, FaCheckCircle } from "react-icons/fa";
 function Navbar() {
 
   const [isScrolled, setIsScrolled]=useState(false)
-  const [isCardOpen, setIsCardOpen]=useState(false)
+  const [isCardOpen, setIsCardOpen]=useState(true)
+
+  const hideCardTimer = useRef(null)
+  const showCardTemporarily=()=>{
+    setIsCardOpen(true)
+    clearTimeout(hideCardTimer.current);
+
+    hideCardTimer.current = setTimeout(()=>{
+      setIsCardOpen(false);
+
+    }, 3000)
+  }
 //handleScroll
   useEffect (()=>{
-    const handleScroll=()=>{
-      const scrolled=window.scrollY>120;
+    
+    const previousScrolled = { current:window.scrollY > 0}
+
+    //Show the card for 3s
+    showCardTemporarily()
+    const handleScroll= ()=>{
+      const scrolled=window.scrollY > 0;
       setIsScrolled(scrolled)
 
-      if (!scrolled){
-        setIsCardOpen(false)
+      //show the card again wheen returning to the top
+      if (previousScrolled.current && !scrolled){
+        showCardTemporarily()
       }
+      previousScrolled.current=scrolled
     }
 
     window.addEventListener("scroll", handleScroll,{
       passive: true,
     })
-    handleScroll();
+
     return ()=>{
       window.removeEventListener("scroll", handleScroll)
+      clearTimeout(hideCardTimer.current)
+
     }
   }, [])
 
 //handleCardOpen
 
-  const showCard=!isScrolled || isCardOpen;
+  const showCard=isCardOpen;
   const handleLogoClick= (event)=>{
     if (isScrolled){
       event.preventDefault();
-      setIsCardOpen((prev)=>!prev)
+      if(isCardOpen){
+        setIsCardOpen(false)
+        clearTimeout(hideCardTimer.current)
+      }else{
+        showCardTemporarily()
+      }
     }
   }
 
