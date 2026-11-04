@@ -17,7 +17,7 @@ body {
       linear-gradient(
         to right,
         rgba(0, 255, 238, 0.05) 0.5px,
-        transparent 1px
+        transparfent 1px
       ),
       linear-gradient(
         to bottom,
@@ -527,6 +527,12 @@ h2 {
   color: var(--main-color);
   text-decoration: none;
 }
+
+/*RedesignsProjects.css*/
+
+
+
+
 .skills {
   margin-top: 60px;
 }
