@@ -3,8 +3,8 @@
 
 import ProjectsCategoreyCard from "../components/ProjectCategoryCard";
 
-import buildFromScratchImg from "../assets/projectsScreen/buikdFromScratch.png"
-import redesignsProjects from  "../assets/projectsScreen/buikdFromScratch.png"
+import buildFromScratchImg from "../assets/projectsScreen/BuildFromScratch.png"
+import redesignsProjects from  "../assets/projectsScreen/RedesignProjects.png"
 
 function Projects(){
       return(

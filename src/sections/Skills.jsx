@@ -11,6 +11,7 @@ function Skills(){
         <div>Responsive Design</div>
         <div>APIs</div>
          <div>TypeScript</div>
+         <div>CSS Tailwind</div>
       </div>
 
     </section>
